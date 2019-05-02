@@ -32,8 +32,8 @@
                           <span class="icon-keyboard_arrow_down arrow-down"></span>
                           <select name="" id="" class="form-control">
                             <option value="">Category</option>
-                            <option value="fulltime">Full Time</option>
-                            <option value="fulltime">Part Time</option>
+                            <option value="fulltime">FullTime</option>
+                            <option value="fulltime">PartTime</option>
                             <option value="freelance">Freelance</option>
                             <option value="internship">Internship</option>
                             <option value="internship">Termporary</option>
