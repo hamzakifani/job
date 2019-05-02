@@ -1,0 +1,133 @@
+.cc {
+    max-width: 308px;
+    max-height: 350px;
+}
+
+.cc img {
+    max-height: 190px;
+}
+
+.home-stats {
+
+	margin-top: 30px;
+
+}
+
+.home-stats  .stat {
+
+	padding: 20px;
+	font-size: 15px;
+	color: white;
+	border-radius: 5px;
+}
+.home-stats  .stat a {
+	color: #FFF;
+}
+
+
+.stat span {
+
+	font-size: 60px;
+	display: block;
+}
+
+.latest {
+	margin-top: 40px;
+}
+
+.st-members {
+	background-color: #3498db;
+}
+
+.st-pending {
+	background-color: #e74c3c;
+}
+
+.st-Items {
+	background-color: #d35400;
+}
+
+.st-comments {
+	background-color: #8e44ad;
+}
+
+.img-avatar {
+	max-width: 40px;
+    max-height: 40px;
+}
+
+.last {
+	position: relative;
+}
+.last .latest-btn {
+	position: absolute;
+	right: 10px;
+	top: 2px;
+}
+
+#information ul li {
+	padding: 15px;
+}
+
+#information ul li:nth-child(odd) {
+
+	background-color: #EEE;
+	
+}
+
+#information ul li span {
+
+	display: inline-block;
+	width: 130px;
+	padding-right: 7px;
+}
+
+#information i {
+
+	padding-right: 7px;
+}
+
+.ads i {
+
+	padding-right: 7px;
+}
+
+.comment i {
+
+	padding-right: 7px;
+}
+.gig .creat-ad {
+
+	position: absolute;
+	top: 205px;
+	left: 66px;
+	padding: 27px !important;
+	border-radius: 59px;
+	width: 162px;
+}
+
+.gig .get-ad {
+
+	position: absolute;
+	top: 92px;
+	left: 66px;
+	padding: 27px !important;
+	border-radius: 59px;
+	width: 162px;
+}
+
+
+.imgg {
+    width: 219px;
+    height: 382px;
+    margin-left: 11rem !important;
+
+}
+.imgg .img-thumbnail {
+	padding: 0.25rem;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 10.25rem!important;
+    max-width: 112px;
+    height: 115px;
+}
