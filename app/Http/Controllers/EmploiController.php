@@ -12,8 +12,8 @@ class EmploiController extends Controller
 
     
    
-    public function create($id){
-        
+    public function create($id , Emploi $emploi){
+        $this->authorize('view', $emploi);
         $job = new Job();
         $job = DB::table('jobs')->where('id', $id)->first();
         $user = DB::table('users')->join('jobs', 'users.id', '=', 'jobs.user_id')->first();

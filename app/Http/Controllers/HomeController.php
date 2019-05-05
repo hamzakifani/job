@@ -17,7 +17,7 @@ class HomeController extends Controller
 
     public function __construct()
     {
-        $this->middleware(['auth','verified'])->except('showjob','showCompany','showuser',
+        $this->middleware('auth')->except('index','showjob','showCompany','showuser',
         'Showjobs','subscribe','contact');
 
     }

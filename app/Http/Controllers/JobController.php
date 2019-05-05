@@ -126,8 +126,9 @@ class JobController extends Controller
 
     }
 
-    public function mesjobs($id)
+    public function mesjobs($id , Job $job)
     {
+        $this->authorize('view', $job);
         $user = User::find($id);
         $jobs = DB::table('jobs')->where('user_id', $id)->paginate(10);
         return view('job', compact('jobs','user'));

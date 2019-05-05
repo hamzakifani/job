@@ -19,7 +19,7 @@ class JobPolicy
      */
     public function view(User $user, Job $job)
     {
-        
+        return $user->type =='recruteur';
 
     }
 

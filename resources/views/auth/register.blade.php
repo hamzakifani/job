@@ -100,9 +100,7 @@
                                
                                 
                                 <button type="submit" class="btnRegister"  value="Register"/>Register</button>
-                                <a  href="register/facebook" class="btn btn-success">
-                                    Register with facebook
-                                </a>
+                             
                         
                             </div>
                         </div>
