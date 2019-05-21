@@ -25,6 +25,8 @@
         <form method="POST" action="{{ route('register') }}">
         @csrf
         <input type="hidden" name="type" value="candidat">
+        <input type="hidden" name="role" value="user">
+
 
                 <div class="tab-content" id="myTabContent">
                     <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
@@ -99,7 +101,7 @@
                                 </div>  
                                
                                 
-                                <button type="submit" class="btnRegister"  value="Register"/>Register</button>
+                                <button type="submit" class="btnRegister"  value="Register">Register</button>
                              
                         
                             </div>
@@ -114,6 +116,7 @@
                     <form method="POST" action="{{ route('register') }}">
                         @csrf
                         <input type="hidden" name="type" value="recruteur">
+                        <input type="hidden" name="role" value="user">
 
                         <h3  class="register-heading">Apply as a Recruteur</h3>
                         <div class="row register-form">

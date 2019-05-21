@@ -21,8 +21,8 @@
                     <div class="row">
                         <div class="col-md-6 col-lg-3 mb-3 mb-lg-0" id="app">
 
-                          <autocomplete></autocomplete>
-                          <flash message=""></flash>
+                          <!-- <autocomplete></autocomplete> -->
+                          <!-- <flash message=""></flash> -->
                           
                         </div>
                          
@@ -369,129 +369,7 @@
       </div>
     </div>
 
-    <div class="site-section block-4 bg-light">
 
-      <div class="container">
-
-        <div class="row justify-content-center text-center mb-5">
-          <div class="col-md-6" data-aos="fade" >
-            <h2 class="text-black">Happy Employers</h2>
-          </div>
-        </div>
-
-        <div class="nonloop-block-4 owl-carousel" data-aos="fade">
-          <div class="item col-md-8 mx-auto">
-            
-            <div class="block-38 text-center bg-white p-4">
-              <div class="block-38-img">
-                <div class="block-38-header"> 
-                  <img src="site/images/person_1.jpg" alt="Image placeholder">
-                  <h3 class="block-38-heading">Elizabeth Graham</h3>
-                  <p class="block-38-subheading">Creative Director, XYG Company</p>
-                </div>
-                <div class="block-38-body">
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae aut minima nihil sit distinctio recusandae doloribus ut fugit officia voluptate soluta. </p>
-                </div>
-              </div>
-            </div>
-
-          </div>
-          <div class="item col-md-8 mx-auto">
-            <div class="block-38 text-center bg-white p-4">
-              <div class="block-38-img">
-                <div class="block-38-header">
-                  <img src="site/images/person_2.jpg" alt="Image placeholder">
-                  <h3 class="block-38-heading">Jennifer Greive</h3>
-                  <p class="block-38-subheading">Lead Designer, Mig Company</p>
-                </div>
-                <div class="block-38-body">
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae aut minima nihil sit distinctio recusandae doloribus ut fugit officia voluptate soluta. </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="item col-md-8 mx-auto">
-            
-            <div class="block-38 text-center bg-white p-4">
-              <div class="block-38-img">
-                <div class="block-38-header"> 
-                  <img src="site/images/person_1.jpg" alt="Image placeholder">
-                  <h3 class="block-38-heading">Elizabeth Graham</h3>
-                  <p class="block-38-subheading">Creative Director, XYG Company</p>
-                </div>
-                <div class="block-38-body">
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae aut minima nihil sit distinctio recusandae doloribus ut fugit officia voluptate soluta. </p>
-                </div>
-              </div>
-            </div>
-
-          </div>
-          <div class="item col-md-8 mx-auto">
-            <div class="block-38 text-center bg-white p-4">
-              <div class="block-38-img">
-                <div class="block-38-header">
-                  <img src="site/images/person_2.jpg" alt="Image placeholder">
-                  <h3 class="block-38-heading">Jennifer Greive</h3>
-                  <p class="block-38-subheading">Lead Designer, Mig Company</p>
-                </div>
-                <div class="block-38-body">
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae aut minima nihil sit distinctio recusandae doloribus ut fugit officia voluptate soluta. </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-    
-
-    <div class="site-section">
-      <div class="container">
-        <div class="row justify-content-center text-center mb-5">
-          <div class="col-md-6" data-aos="fade" >
-            <h2 class="text-black">Latest Blog</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6 mb-5 mb-lg-0 col-lg-3" data-aos="fade">
-            <div class="position-relative unit-8">
-            <a href="#" class="mb-3 d-block img-a"><img src="site/images/img_1.jpg" alt="Image" class="img-fluid rounded"></a>
-            <span class="d-block text-gray-500 text-normal small mb-3">By <a href="#">Colorlib</a> <span class="mx-2">&bullet;</span> Jan 20th, 2019</span>
-            <h2 class="h5 font-weihgt-normal line-height-sm mb-3"><a href="#" class="text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit</a></h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In pariatur nostrum asperiores corrupti delectus.</p>
-            </div>
-            
-          </div>
-          <div class="col-md-6 mb-5 mb-lg-0 col-lg-3" data-aos="fade">
-            <div class="position-relative unit-8">
-            <a href="#" class="mb-3 d-block img-a"><img src="site/images/img_2.jpg" alt="Image" class="img-fluid rounded"></a>
-            <span class="d-block text-gray-500 text-normal small mb-3">By <a href="#">Colorlib</a> <span class="mx-2">&bullet;</span> Jan 20th, 2019</span>
-            <h2 class="h5 font-weihgt-normal line-height-sm mb-3"><a href="#" class="text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit</a></h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In pariatur nostrum asperiores corrupti delectus.</p>
-            </div>
-          </div>
-          <div class="col-md-6 mb-5 mb-lg-0 col-lg-3" data-aos="fade">
-            <div class="position-relative unit-8">
-            <a href="#" class="mb-3 d-block img-a"><img src="site/images/img_3.jpg" alt="Image" class="img-fluid rounded"></a>
-            <span class="d-block text-gray-500 text-normal small mb-3">By <a href="#">Colorlib</a> <span class="mx-2">&bullet;</span> Jan 20th, 2019</span>
-            <h2 class="h5 font-weihgt-normal line-height-sm mb-3"><a href="#" class="text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit</a></h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In pariatur nostrum asperiores corrupti delectus.</p>
-            </div>
-          </div>
-          <div class="col-md-6 mb-5 mb-lg-0 col-lg-3" data-aos="fade">
-            <div class="position-relative unit-8">
-            <a href="#" class="mb-3 d-block img-a"><img src="site/images/img_4.jpg" alt="Image" class="img-fluid rounded"></a>
-            <span class="d-block text-gray-500 text-normal small mb-3">By <a href="#">Colorlib</a> <span class="mx-2">&bullet;</span> Jan 20th, 2019</span>
-            <h2 class="h5 font-weihgt-normal line-height-sm mb-3"><a href="#" class="text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit</a></h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In pariatur nostrum asperiores corrupti delectus.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
     
     <div class="py-5 bg-primary">
       <div class="container" id="send">
@@ -662,8 +540,7 @@
       }
     </script>
 
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&libraries=places&callback=initAutocomplete"
-        async defer></script>  --}}
+ 
 
     
   @endsection

@@ -34,64 +34,13 @@ Route::get('/about', function () {
     return view('about');
 });
 
-
+Route::get('/dashboard','HomeController@dash');
 
 Route::get('/blog', function () {
     return view('blog');
 });
 
 Route::get('/company/{name}', 'HomeController@showCompany');
-
-//--------------------------------\\ 
-//       Route of Axios of Users
-//--------------------------------\\ 
-
-Route::get('/admin/getusers', 'AdminController@Showusers');
-
-Route::post('/admin/addusers', 'AdminController@addusers');
-
-Route::PUT('/admin/upusers', 'AdminController@upusers'); 
-
-Route::delete('/admin/delusers/{id}', 'AdminController@delusers'); 
-
-//--------------------------------\\ 
-//       Route of Axios of jobs
-//--------------------------------\\ 
-
-Route::get('/admin/getjobs', 'AdminController@Showjobs');
-
-Route::post('/admin/addjobs', 'AdminController@addjobs');
-
-Route::PUT('/admin/upjobs', 'AdminController@upjobs'); 
-
-Route::delete('/admin/deljobs/{id}', 'AdminController@deljobs'); 
-
-//--------------------------------\\ 
-//       Route of Axios of Dashboard
-//--------------------------------\\ 
-Route::get('/admin/Showusers', 'AdminController@Showusers');
-Route::get('/admin/Showjobs', 'AdminController@Showjobs');
-
-
-
-//--------------------------------\\ 
-//       Route of Admin
-//--------------------------------\\ 
-
-Route::get('/admin/dashboard', 'AdminController@index');
-
-Route::get('/admin/listjob', 'AdminController@readjobs');
-
-Route::get('/admin/listusers', 'AdminController@readusers');
-
-
-
-
-//-----------Pending jobs-----------\\ 
-Route::get('/admin/pending-jobs', 'AdminController@Showpendingjobs');
-
-Route::PUT('/admin/pending-jobs/{id}', 'AdminController@updatePendingJob');
-//--------------------------------\\ 
 
 
 //----------- Route of Auth-----------\\ 
@@ -121,13 +70,6 @@ Route::get('/job/{id}/postuler','EmploiController@create');
 Route::post('/job/{id}/postuler','EmploiController@store');
 
 
-//-----------ALL ROUTE OF login admin-----------\\ 
-Route::prefix('/login')->group(function() {
-    Route::get('/admin', 'Auth\AdminLoginController@showAdminLoginForm')->name('login.admin');
-    Route::post('/admin', 'Auth\AdminLoginController@adminLogin')->name('login.admin.post');
-});
-Route::post('/admin/logout', 'Auth\AdminLoginController@logoutAdmin')->name('logout.admin');
-
 
 //-------------------------------------------------\\ 
 Route::get('/getjobs', 'HomeController@Showjobs');
@@ -148,12 +90,6 @@ Route::get('/alljobs/{id}', 'JobController@alljobs');
 
 Route::PUT('/updatejob', 'JobController@updatejob');
 
-Route::get('/admin/subscribe', 'AdminController@subscribe');
-
-Route::get('/admin/contact', 'AdminController@contact');
-
-
-Route::post('/subscribe', 'HomeController@subscribe');
 
 //--------------------------------------------------------------------
 Route::get('login/{provider}', 'Auth\LoginController@redirectToProvider');
@@ -179,3 +115,8 @@ Route::post('/addcontact', 'HomeController@contact');
 
 Auth::routes(['verify' => true]);
 
+
+
+Route::get('dashboard/{path}', 'HomeController@dash')->where('path', '([A-z\d-\/_.]+)?');
+
+// Route::get('/dashboard/users', 'API\UserController@index');

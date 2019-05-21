@@ -4,8 +4,6 @@ namespace App\Providers;
 use App\Job;
 use Laravel\Passport\Passport;
 
-
-
 use App\Policies\JobPolicy;
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;

@@ -9,13 +9,51 @@ require('./bootstrap');
 
 window.Vue = require('vue');
 
+import { Form, HasError, AlertError } from 'vform';
+
 window.events = new Vue();
   
 window.flash = function(message) {
     window.events.$emit('flash',message);
 }
 
+window.Form = Form;
+Vue.component(HasError.name, HasError)
+Vue.component(AlertError.name, AlertError)
 
+import VueRouter from 'vue-router'
+
+import Swal from 'sweetalert2'
+window.Swal = Swal ;
+
+
+Vue.use(VueRouter)
+
+let routes = [
+    { path: '/dashboard', component: require('./components/dashboard.vue').default},
+    { path: '/dashboard/users', component: require('./components/users.vue').default},
+    { path: '/dashboard/jobs', component: require('./components/jobs.vue').default},
+    { path: '/dashboard/profile', component: require('./components/profile.vue').default},
+    { path: '/dashboard/developper', component: require('./components/developper.vue').default},
+    { path: '/dashboard/subscribe', component: require('./components/subscribe.vue').default},
+    { path: '/dashboard/message', component: require('./components/message.vue').default}
+  ]
+
+  const toast = Swal.mixin({
+    toast: true,
+    position: 'top-end',
+    showConfirmButton: false,
+    timer: 3000
+  });
+
+  window.toast = toast;
+
+  const router = new VueRouter({
+    mode: 'history',
+    routes // short for `routes: routes`
+  })
+
+  window.Fire = new Vue();
 
 
 /**
@@ -29,9 +67,9 @@ window.flash = function(message) {
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
-Vue.component('autocomplete', require('./components/Autocomplete.vue').default);
+// Vue.component('autocomplete', require('./components/Autocomplete.vue'));
 
-Vue.component('flash', require('./components/Flash.vue').default);
+// Vue.component('flash', require('./components/Flash.vue'));
 
 
 Vue.component(
@@ -57,5 +95,6 @@ Vue.component(
  */
 
 const app = new Vue({
-    el: '#app'
+    el: '#app',
+    router
 });

@@ -218,5 +218,11 @@ public function subscribe(request $request)
     return Response()->json(['etat' => true]);
 
    }
+
+
+   public function dash()
+    {
+        return view('dashboard');
+    }
 }
 

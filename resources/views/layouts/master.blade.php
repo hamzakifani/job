@@ -16,7 +16,6 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
-
     <link rel="stylesheet" href="{{ asset('site/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('site/css/magnific-popup.css') }}">
     <link rel="stylesheet" href="{{ asset('site/css/jquery-ui.css') }}">
@@ -36,7 +35,8 @@
 
     <!-- Scripts -->
 
-  
+    <link rel="stylesheet"  href="/css/app.css">
+
 
   </head>
 
@@ -80,7 +80,6 @@
                     <li><a href="{{('/category/Termporary')}}">Termporary</a></li>
                   </ul>
                 </li>
-                <li><a href="{{('/blog')}}">@lang('master.Blog')</a></li>
                 <li><a href="{{('/about')}}">@lang('master.About')</a></li>
                 <li><a href="{{('/contact')}}">@lang('master.Contact')</a></li>
                
@@ -88,11 +87,10 @@
                       
                 
                     <li class="has-children">
-                      <a href="#"><span class="rounded bg-primary py-2 px-3 text-white"><span class="h5 mr-2"></span> {{auth::user()->firstname}}</span></a>
+                      <a href="dashboard"><span class="rounded bg-primary py-2 px-3 text-white"><span class="h5 mr-2"></span> {{auth::user()->firstname}}</span></a>
                       <ul class="dropdown">
-                        <li><a href="{{('/profile/'.Auth::user()->id.'/edit')}}">My Profil</a></li>
-                        <li><a href="{{('/profile/'.Auth::user()->id.'/job')}}">Mes Jobs</a></li>
-                        <li><a href="{{('/message')}}">Mes Messages</a></li>
+                        <li><a href="dashboard">Dashboard</a></li>
+                       
 
                         <li><a class="dropdown-item" href="{{ route('logout') }}"
                           onclick="event.preventDefault();
@@ -158,12 +156,11 @@
 
 
 
-
 <script src="{{ asset('site/js/vue.js') }}" ></script>
     
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
 
-<script src="{{ asset('site/js/axios.js') }}"></script>
+<script src="{{ asset('site/js/axios.js') }}"></script> 
 
   
 
@@ -186,7 +183,9 @@
 @yield('javascript')
 
 
-<script type="text/javascript" src="{{ mix('/js/app.js') }}" ></script>
+<!-- <script type="text/javascript" src="{{ mix('/js/app.js') }}" ></script> -->
+
+<script src="/js/app.js"></script>
       
-    </body>
+  </body>
 </html>

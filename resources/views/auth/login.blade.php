@@ -41,7 +41,7 @@
                         </div>
 
                        
-                        <div class="form-group row{{ $errors->has('captcha') ? ' has-error' : '' }}">
+                        <!-- <div class="form-group row{{ $errors->has('captcha') ? ' has-error' : '' }}">
                             <label for="password" class="col-md-4 col-form-label text-md-right">Captcha</label>
       
       
@@ -59,7 +59,7 @@
                                     </span>
                                 @endif
                             </div>
-                        </div>
+                        </div> -->
 
                         
                         <div class="form-group row">
@@ -100,19 +100,5 @@
     </div>
 </div>
 
-<script type="text/javascript">
 
-
-    $(".btn-refresh").click(function(){
-      $.ajax({
-         type:'GET',
-         url:'/refresh_captcha',
-         success:function(data){
-            $(".captcha span").html(data.captcha);
-         }
-      });
-    });
-    
-    
-    </script>
 @endsection
